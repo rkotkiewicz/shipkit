@@ -1,5 +1,8 @@
 apply plugin: 'org.shipkit.ci-upgrade-downstream'
 
-upgradeDownstream {
-    repositories = ['mockito/shipkit-example', 'mockito/shipkit']
-}
+// It's temporary commented out. The testDownstream task run whole command from old Shipkit version
+// (without "-x pushJavadoc"), so pushJavadoc task will be executed and if tails
+//TODO: uncomment after merge
+//upgradeDownstream {
+//    repositories = ['mockito/shipkit-example', 'mockito/shipkit']
+//}
